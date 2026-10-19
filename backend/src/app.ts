@@ -8,6 +8,7 @@ export function createApp(store: NoteStore, corsOrigin = '*') {
 
   // The browser calls this API from a different origin (5173 in dev, 8080 in
   // a container), so the API has to say who is allowed in.
+  //hello just to check
   app.use((req, res, next) => {
     res.set('Access-Control-Allow-Origin', corsOrigin);
     res.set('Access-Control-Allow-Headers', 'Content-Type');

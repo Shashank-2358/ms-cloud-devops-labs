@@ -10,6 +10,7 @@ import { NoteStore } from './store.js';
  * app often cannot create its data directory. Discovering that on the first
  * POST, hours later, is miserable; discovering it at startup is a one-line fix
  * (chown the directory in the Dockerfile, or mount a volume).
+ * testing
  */
 async function checkStorage(file: string): Promise<void> {
   const dir = dirname(resolve(file));
